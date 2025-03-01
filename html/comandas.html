@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandas - Restaurante XYZ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo-mesaecomanda.png" alt="Logo do Restaurante XYZ">
+        </div>
+        <div class="links">
+            <a href="index.html">Projeto</a>
+            <a href="mesas.html">Mesas</a>
+            <a href="comandas.html" class="active-link">Comandas</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="comandas">
+            <h1 class="titulo-comandas">Comandas Ativas</h1>
+            <div class="comandas-conteudo">
+                <div class="comandas-lista">
+                    <!-- Comanda 1 -->
+                    <article class="comanda">
+                        <div class="comanda-info">
+                            <h2>Comanda #001</h2>
+                            <p><strong>Mesa:</strong> 4</p>
+                            <p><strong>Itens:</strong></p>
+                            <ul>
+                                <li>1x Pizza Margherita Vegana</li>
+                                <li>2x Suco Natural de Laranja</li>
+                                <li>1x Pudim de Chia com Frutas</li>
+                            </ul>
+                            <p><strong>Total:</strong> R$ 115,00</p>
+                            <p><strong>Status:</strong> <span class="status-andamento">Em andamento</span></p>
+                        </div>
+                        <button class="finalizar" onclick="finalizarComanda(1)" aria-label="Finalizar Comanda #001">Finalizar Comanda</button>
+                    </article>
+
+                    <!-- Comanda 2 -->
+                    <article class="comanda">
+                        <div class="comanda-info">
+                            <h2>Comanda #002</h2>
+                            <p><strong>Mesa:</strong> 7</p>
+                            <p><strong>Itens:</strong></p>
+                            <ul>
+                                <li>2x Hamburguer de Feijão Preto</li>
+                                <li>1x Guacamole com Nachos</li>
+                                <li>2x Suco Natural de Frutas Vermelhas</li>
+                            </ul>
+                            <p><strong>Total:</strong> R$ 110,00</p>
+                            <p><strong>Status:</strong> <span class="status-finalizada">Finalizada</span></p>
+                        </div>
+                        <button class="finalizar" disabled aria-label="Comanda #002 Finalizada">Comanda Finalizada</button>
+                    </article>
+
+                    <!-- Comanda 3 -->
+                    <article class="comanda">
+                        <div class="comanda-info">
+                            <h2>Comanda #003</h2>
+                            <p><strong>Mesa:</strong> 2</p>
+                            <p><strong>Itens:</strong></p>
+                            <ul>
+                                <li>1x Lasanha de Berinjela e Espinafre</li>
+                                <li>1x Jarra de Suco de Maçã com Gengibre</li>
+                                <li>1x Salada de Lentilha e Beterraba</li>
+                            </ul>
+                            <p><strong>Total:</strong> R$ 130,00</p>
+                            <p><strong>Status:</strong> <span class="status-andamento">Em andamento</span></p>
+                        </div>
+                        <button class="finalizar" onclick="finalizarComanda(3)" aria-label="Finalizar Comanda #003">Finalizar Comanda</button>
+                    </article>
+
+                    <!-- Comanda 4 -->
+                    <article class="comanda">
+                        <div class="comanda-info">
+                            <h2>Comanda #004</h2>
+                            <p><strong>Mesa:</strong> 8</p>
+                            <p><strong>Itens:</strong></p>
+                            <ul>
+                                <li>1x Strogonoff de Cogumelos</li>
+                                <li>1x Jarra de Suco de Laranja com Cenoura</li>
+                                <li>1x Salada Cesar Vegana</li>
+                            </ul>
+                            <p><strong>Total:</strong> R$ 120,00</p>
+                            <p><strong>Status:</strong> <span class="status-andamento">Em andamento</span></p>
+                        </div>
+                        <button class="finalizar" onclick="finalizarComanda(3)" aria-label="Finalizar Comanda #003">Finalizar Comanda</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Restaurante XYZ. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function finalizarComanda(comandaId) {
+            alert('Comanda #' + comandaId + ' finalizada com sucesso!');
+            
+        }
+    </script>
+</body>
+</html>

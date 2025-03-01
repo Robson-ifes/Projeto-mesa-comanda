@@ -1,0 +1,361 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ec1818;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 95px;
+}
+
+header .links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+header .links a:hover,
+.active-link {
+    color: #080700;
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+}
+
+main {
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+main .thumbail {
+    width: 60%;
+    height: 650px;
+    background: url("../img/Marmita.jpg") center/cover no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+main .conteudo {
+    max-width: 50vw;
+    padding: 25px;
+}
+
+.conteudo h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.conteudo p {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.conteudo a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.conteudo a:hover {
+    background-color: #ec1818;
+}
+
+/* Estilo para a seção de mesas */
+.mesas {
+    background-image: url("../img/restaurante.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mesas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.mesas-conteudo {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(12, 12, 12); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.titulo-mesa {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(250, 249, 249);
+    margin-bottom: 20px;
+}
+
+.titulo-mesa:hover {
+    text-decoration: underline;
+}
+
+.mesas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mesa {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservar {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 80%;
+    margin-top: 15px;
+}
+
+.reservar:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.reservar:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para a seção de comandas */
+.comandas {
+    background-image: url("../img/restaurante-comandas.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.comandas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.comandas-conteudo {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.titulo-comandas {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.comandas-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.comanda {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comanda-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.comanda-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.comanda-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.comanda-info ul li {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.status-andamento {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.status-finalizada {
+    color: #888;
+    font-weight: bold;
+}
+
+.finalizar {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.finalizar:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+.finalizar:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .mesas-conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mesas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mesa {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .titulo-mesa {
+        font-size: 30px;
+    }
+
+    .comandas-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-comandas {
+        font-size: 30px;
+    }
+}

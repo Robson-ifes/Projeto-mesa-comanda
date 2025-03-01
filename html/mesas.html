@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesas - Restaurante XYZ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo-mesaecomanda.png" alt="Logo do Restaurante XYZ">
+        </div>
+        <div class="links">
+            <a href="index.html">Projeto</a>
+            <a href="mesas.html" class="active-link">Mesas</a>
+            <a href="comandas.html">Comandas</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="mesas">
+            <h1 class="titulo-mesa">Escolha uma Mesa</h1>
+            <div class="mesas-conteudo">
+                <div class="mesas-grid">
+                    <article class="mesa">
+                        <div class="mesa-info">
+                            <h2>Mesa 1</h2>
+                            <p>Status: <span class="disponivel">Disponível</span></p>
+                        </div>
+                        <button class="reservar" onclick="reservarMesa(1)" aria-label="Reservar Mesa 1">Reservar</button>
+                    </article>
+
+                    <article class="mesa">
+                        <div class="mesa-info">
+                            <h2>Mesa 2</h2>
+                            <p>Status: <span class="ocupada">Ocupada</span></p>
+                        </div>
+                        <button class="reservar" disabled aria-label="Mesa 2 Ocupada">Ocupada</button>
+                    </article>
+
+                    <article class="mesa">
+                        <div class="mesa-info">
+                            <h2>Mesa 3</h2>
+                            <p>Status: <span class="disponivel">Disponível</span></p>
+                        </div>
+                        <button class="reservar" onclick="reservarMesa(3)" aria-label="Reservar Mesa 3">Reservar</button>
+                    </article>
+
+                    <article class="mesa">
+                        <div class="mesa-info">
+                            <h2>Mesa 4</h2>
+                            <p>Status: <span class="ocupada">Ocupada</span></p>
+                        </div>
+                        <button class="reservar" disabled aria-label="Mesa 4 Ocupada">Ocupada</button>
+                    </article>
+
+                    <article class="mesa">
+                        <div class="mesa-info">
+                            <h2>Mesa 5</h2>
+                            <p>Status: <span class="disponivel">Disponível</span></p>
+                        </div>
+                        <button class="reservar" onclick="reservarMesa(5)" aria-label="Reservar Mesa 5">Reservar</button>
+                    </article>
+
+                    <article class="mesa">
+                        <div class="mesa-info">
+                            <h2>Mesa 6</h2>
+                            <p>Status: <span class="disponivel">Disponível</span></p>
+                        </div>
+                        <button class="reservar" onclick="reservarMesa(6)" aria-label="Reservar Mesa 6">Reservar</button>
+                    </article>
+                    <article class="mesa">
+                        <div class="mesa-info">
+                            <h2>Mesa 7</h2>
+                            <p>Status: <span class="ocupada">Ocupada</span></p>
+                        </div>
+                        <button class="reservar" disabled aria-label="Mesa 7 Ocupada">Ocupada</button>
+                    </article>
+
+                    <article class="mesa">
+                        <div class="mesa-info">
+                            <h2>Mesa 8</h2>
+                            <p>Status: <span class="ocupada">Ocupada</span></p>
+                        </div>
+                        <button class="reservar" disabled aria-label="Mesa 8 Ocupada">Ocupada</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Restaurante XYZ. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function reservarMesa(mesaId) {
+            alert('Mesa ' + mesaId + ' reservada com sucesso!');
+            
+        }
+    </script>
+</body>
+</html>
