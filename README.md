@@ -36,19 +36,6 @@ O design foi pensado para ser responsivo e intuitivo, garantindo uma boa experi�
    ```bash
    git clone https://github.com/Robson-ifes/Projeto-mesa-comanda.git
    ```
-2. Instale as dependências (caso necessário):
-   ```bash
-   npm install
-   ```
-3. Inicie o servidor:
-   ```bash
-   npm start
-   ```
-4. Acesse no navegador:
-   ```
-   http://localhost:3000
-   ```
-
 ## 🔧 Melhorias Futuras
 
 - Implementação de pagamentos online.
