@@ -22,13 +22,13 @@ O design foi pensado para ser responsivo e intuitivo, garantindo uma boa experi�
 ### 📸 Exemplos do Sistema
 
 #### Página Inicial
-![Tela Inicial do Sistema](images/tela-inicial.png)
+![Tela Inicial do Sistema](https://github.com/Robson-ifes/Projeto-mesa-comanda/blob/main/P%C3%A1gina%20inicial.png)
 
 #### Página de Mesas
-![Página de Mesas](images/pagina-mesas.png)
+![Página de Mesas](https://github.com/Robson-ifes/Projeto-mesa-comanda/blob/main/P%C3%A1gina%20mesas.png)
 
 #### Página de Comandas
-![Página de Comandas](images/pagina-comandas.png)
+![Página de Comandas](https://github.com/Robson-ifes/Projeto-mesa-comanda/blob/main/P%C3%A1gina%20de%20comandas.png)
 
 ## 📖 Como Usar
 
