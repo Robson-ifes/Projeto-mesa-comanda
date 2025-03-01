@@ -5,7 +5,6 @@ Bem-vindo ao **Projeto Mesa Comanda**! Este projeto foi desenvolvido na discipli
 ## 📌 Sobre o Projeto
 
 O sistema permite (em tese):
-
 - Cadastro de mesas e clientes.
 - Registro e gerenciamento de comandas.
 - Controle de pedidos em tempo real.
@@ -20,12 +19,36 @@ O sistema permite (em tese):
 
 O design foi pensado para ser responsivo e intuitivo, garantindo uma boa experiência para os usuários do restaurante.
 
+### 📸 Exemplos do Sistema
+
+#### Página Inicial
+![Tela Inicial do Sistema](images/tela-inicial.png)
+
+#### Página de Mesas
+![Página de Mesas](images/pagina-mesas.png)
+
+#### Página de Comandas
+![Página de Comandas](images/pagina-comandas.png)
+
 ## 📖 Como Usar
 
 1. Clone o repositório:
    ```bash
    git clone https://github.com/Robson-ifes/Projeto-mesa-comanda.git
    ```
+2. Instale as dependências (caso necessário):
+   ```bash
+   npm install
+   ```
+3. Inicie o servidor:
+   ```bash
+   npm start
+   ```
+4. Acesse no navegador:
+   ```
+   http://localhost:3000
+   ```
+
 ## 🔧 Melhorias Futuras
 
 - Implementação de pagamentos online.
@@ -35,7 +58,6 @@ O design foi pensado para ser responsivo e intuitivo, garantindo uma boa experi�
 ## 🤝 Contribuição
 
 Fique à vontade para contribuir com o projeto! Basta seguir os passos:
-
 1. Faça um fork do repositório.
 2. Crie uma branch para suas alterações:
    ```bash
@@ -56,6 +78,5 @@ Fique à vontade para contribuir com o projeto! Basta seguir os passos:
 Este projeto está sob a licença MIT. Sinta-se livre para utilizá-lo e adaptá-lo conforme necessário.
 
 ---
-
 ✉️ Caso tenha dúvidas ou sugestões, entre em contato! 😃
 
